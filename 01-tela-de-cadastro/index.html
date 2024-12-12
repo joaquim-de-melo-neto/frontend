@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffbc11;
+            font-family: Monospace, sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background: #FFF;
+            min-width: 450px;
+            padding: 20px 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            h2 {
+                align-self: center;
+                padding-bottom: 0.5rem;
+            }
+
+            label {
+                font-weight: bolder;
+                padding: 0.5rem 0;
+            }
+
+            input {
+                margin-bottom: 0.5rem 0;
+                &[type="submit"] {
+                    margin-top: 0.5rem;
+                    font-weight: bolder;
+                    background-color: yellowgreen;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <h2>Cadastrar</h2>
+        <hr>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+
+</body>
+
+</html>
