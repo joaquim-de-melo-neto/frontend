@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            min-height: 100vh;
+            background: no-repeat center url(img.png);
+        }
+
+        nav{
+            background-color: white;
+            box-shadow: rgb(0, 0, 0, 0.1);
+        }
+
+        nav ul{
+            display: flex;
+            width: 100%;
+            list-style: none;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav li{
+            height: 50px;
+
+        }
+
+        nav a{
+            height: 100%;
+            padding: 0 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        nav a:hover{
+            background-color: #f0f0f0;
+
+        }
+
+        nav li:first-of-type{
+            margin-inline-end: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Navbar</a></li> // Logo
+            <li><a href="">About</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
