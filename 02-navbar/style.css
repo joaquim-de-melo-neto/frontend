@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    min-height: 100vh;
+    background: no-repeat center url(paisagem.jpg);
+    background-size: cover;
+}
+
+nav{
+    background-color: white;
+    box-shadow: rgb(3px, 3px, 5px, rgb(0, 0, 0, 0.2));
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100dvh;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: -10px 0 -10px rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+}
+
+@media (max-didth: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
